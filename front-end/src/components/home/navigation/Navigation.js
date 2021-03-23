@@ -31,7 +31,7 @@ const Navigation = ()=>{
                     </div>
                     <div className="search-bar">
                         <li style={{marginLeft:40}}>
-                            <input type="text" id="search" size={18}/>
+                            <input type="text" id="search" size={16}/>
                             <a href="#gg">
                                 <img width={30} height={30} src={recherche} alt='recherche' />
                             </a>
