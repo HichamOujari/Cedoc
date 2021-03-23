@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="222e7ee3-4542-4952-8006-c074e0dd6f2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitkeep" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -28,6 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1q7kWsrcoqnKCZ1cntbgqXDSiSu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +61,8 @@
       <option name="presentableId" value="Default" />
       <updated>1616438050594</updated>
       <workItem from="1616438051970" duration="3042000" />
-      <workItem from="1616441244401" duration="10771000" />
+      <workItem from="1616441244401" duration="10946000" />
+      <workItem from="1616493276255" duration="283000" />
     </task>
     <task id="LOCAL-00001" summary="initialisation">
       <created>1616438416442</created>
