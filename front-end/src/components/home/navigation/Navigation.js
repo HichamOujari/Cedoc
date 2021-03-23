@@ -14,7 +14,7 @@ const Navigation = ()=>{
                             <img  width={120} height={85} src={logo} alt='logo'/>
                         </li>
                     </div>
-                    <div style={{color: "white",fontSize:48,alignSelf:'flex-end'}}>
+                    <div style={{color: "white",fontSize:48,alignSelf:'flex-end',fontFamily:'Trebuchet MS'}}>
                         <li >Cedoc EMI</li>
                     </div>
 
@@ -40,13 +40,13 @@ const Navigation = ()=>{
 
                 </div>
                 <div className="right-nav">
-                    <div style={{marginRight:60,cursor:"pointer"}} >
-                        <p id="login">Login </p>
-                    </div>
 
-                    <div >
-                        <img style={{borderRadius:80,cursor:"pointer"}}  width={64} height={70} src={loginLogo} alt="logo" />
-                    </div>
+                    <p id="login">Login </p>
+
+
+
+                    <img style={{borderRadius:80,cursor:"pointer"}}  width={64} height={70} src={loginLogo} alt="logo" />
+
                 </div>
             </ul>
 

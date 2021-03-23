@@ -74,6 +74,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .emi-logo{
@@ -84,4 +85,6 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+    justify-content: right;
+    cursor: pointer;
 }

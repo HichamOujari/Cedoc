@@ -3,6 +3,7 @@ import './Home.css';
 import Navigation from "./navigation/Navigation";
 import Welcome from "./welcome/Welcome";
 
+
 class Home extends  React.Component{
     constructor() {
         super();
