@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="222e7ee3-4542-4952-8006-c074e0dd6f2a" name="Default Changelist" comment="" />
+    <list default="true" id="222e7ee3-4542-4952-8006-c074e0dd6f2a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +33,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -53,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616438050594</updated>
       <workItem from="1616438051970" duration="3042000" />
-      <workItem from="1616441244401" duration="8112000" />
+      <workItem from="1616441244401" duration="10771000" />
     </task>
     <task id="LOCAL-00001" summary="initialisation">
       <created>1616438416442</created>

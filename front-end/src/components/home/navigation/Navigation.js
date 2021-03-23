@@ -8,20 +8,26 @@ import recherche from './recherche.png';
 const Navigation = ()=>{
     return(
             <ul className="navigation">
-                <li >
-                        <img  width={120} height={85} src={logo} alt='logo'/>
-                </li>
-                <li className="text-logo">Cedoc EMI</li>
+                <div className="left-nav">
+                    <div>
+                        <li >
+                            <img  width={120} height={85} src={logo} alt='logo'/>
+                        </li>
+                    </div>
+                    <div style={{color: "white",fontSize:48,alignSelf:'flex-end'}}>
+                        <li >Cedoc EMI</li>
+                    </div>
 
+                </div>
                 <div className="mid-nav">
                     <div className="mid-li">
-                        <li ><a href="#gg">Actualité</a></li>
+                        Actualité
                     </div>
                     <div className="mid-li">
-                        <li><a href="#gg">Structure de recherche</a></li>
+                        Structure de recherche
                     </div>
                     <div className="mid-li">
-                        <li ><a href="#gg">Doctorant</a></li>
+                        Doctorant
                     </div>
                     <div className="search-bar">
                         <li style={{marginLeft:40}}>
@@ -33,12 +39,15 @@ const Navigation = ()=>{
                     </div>
 
                 </div>
-                <li style={{marginLeft:"auto"}}>
-                    <a href="#gg">Login </a>
-                    <a href="#gg">
-                        <img style={{borderRadius:80}}  width={64} height={70} src={loginLogo} alt="logo" />
-                    </a>
-                </li>
+                <div className="right-nav">
+                    <div style={{marginRight:60,cursor:"pointer"}} >
+                        <p id="login">Login </p>
+                    </div>
+
+                    <div >
+                        <img style={{borderRadius:80,cursor:"pointer"}}  width={64} height={70} src={loginLogo} alt="logo" />
+                    </div>
+                </div>
             </ul>
 
     )
