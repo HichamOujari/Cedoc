@@ -14,7 +14,7 @@ const Navigation = ()=>{
                             <img  width={120} height={85} src={logo} alt='logo'/>
                         </li>
                     </div>
-                    <div style={{color: "white",fontSize:48,alignSelf:'flex-end',fontFamily:'Trebuchet MS'}}>
+                    <div style={{color: "white",fontSize:48,alignSelf:'flex-end',fontFamily:'Optima'}}>
                         <li >Cedoc EMI</li>
                     </div>
 
