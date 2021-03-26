@@ -1,13 +1,13 @@
 .navigation{
     width: 100%;
+    height: 65px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: black;
     display: flex;
     align-items: center;
-    font-family: 'Lucida Console', Monaco, monospace;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 
 }
 .logo{
@@ -23,9 +23,8 @@
 
 
 .mid-li{
-    height: 85px;
+    height: 65px;
     width: 25%;
-
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -35,26 +34,88 @@
     color: white;
     text-align: center;
     padding: 14px 16px;
-    font-size: 28px;
+    font-size: 21px;
+}
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 
-.mid-li:hover{
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-content-structures {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    height: 195px;
+    width: 285.45px;
+    z-index: 1;
+    left:0;
+    top:65px;
+}
+.dropdown-content-doctorant{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    height: 125px;
+    width: 285.45px;
+    z-index: 1;
+    left:0;
+    top:65px;
+}
+.d {
+    height: 65px;
+    width: 285.45px;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    background-color: #282c34;
+}
+
+
+
+.dropdown:hover .dropdown-content-structures {
+    display: block;
+}
+.dropdown:hover .dropdown-content-doctorant {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.d:hover {
     background-color: deepskyblue;
     color: black;
 }
 
 
+.mid-li:hover{
+    background-color: deepskyblue;
+    color: black;
+
+}
 
 .mid-nav{
     width: 60%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
+    position: relative;
 }
 
 .search-bar{
-    height: 85px;
+    height: 65px;
     width: 250px;
     display: flex;
     align-items: center;
@@ -75,6 +136,7 @@
     justify-content: center;
     align-items: center;
     margin-right: auto;
+
 }
 
 .emi-logo{
@@ -88,3 +150,5 @@
     justify-content: center;
     cursor: pointer;
 }
+
+
