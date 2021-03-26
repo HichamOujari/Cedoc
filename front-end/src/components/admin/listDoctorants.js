@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import style from "./style/ListDoctorant.css"
 import Nav from "./nav.js"
 import SideBar from "./sideBar.js"
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 export default class ListDoctorant extends Component {
   render() {
     return (
@@ -16,7 +18,7 @@ export default class ListDoctorant extends Component {
               document.getElementById("ExcelInput").click()
             }} className="Upload">
                 <input type="file" hidden id="ExcelInput"/>
-                <p className="Icon">a</p>
+                <CloudUploadIcon className="Icon"/>
                 <p className="text">Drop files here to upload</p>
               </div>
               <button className="SubmitImport">Confirmer</button>
@@ -24,17 +26,15 @@ export default class ListDoctorant extends Component {
             <div className="AfficheTable">
               <p className="title">Tableau d'affichage</p>
               <table>
-                <thead>
-                  <tr>
-                    <th>Nom</th>
-                    <th>Prenom</th>
-                    <th>CNE</th>
-                    <th>CNI</th>
-                    <th>Email</th>
-                    <th>Diplome</th>
-                    <th>Specialité</th>
-                  </tr>
-                </thead>
+                <tr>
+                  <th>Nom</th>
+                  <th>Prenom</th>
+                  <th>CNE</th>
+                  <th>CNI</th>
+                  <th>Email</th>
+                  <th>Diplome</th>
+                  <th>Specialité</th>
+                </tr>
                 <tbody>
                   <tr>
                     <td>Oujari</td>
@@ -55,9 +55,7 @@ export default class ListDoctorant extends Component {
                     <td>Genie informatique</td>
                   </tr>
                 </tbody>
-                <tfoot>
-
-                </tfoot>
+                <tfoot></tfoot>
               </table>
             </div>
           </div>
