@@ -15,10 +15,10 @@ export default class SideBar extends Component {
             <h3 className="title">Cedoc <span>EMI</span></h3>
           </div>
           <ul className="Elements">
-            <Link href="/admin/"><li><DashboardIcon className="Icon" /> <p>Dashboard</p></li></Link>
-            <Link href="/admin/doctorant"><li className="active"><FaceIcon className="Icon" /> <p>Doctorants préinscrits</p></li></Link>
-            <Link href="/admin/enseignent"><li ><SupervisorAccountIcon className="Icon" /> <p>Gerer les enseignents</p></li></Link>
-            <Link href="/admin/structure-recherche"><li ><SyncAltIcon className="Icon" /> <p>Structure de recherche</p></li></Link>
+            <Link to="/admin/"><li><DashboardIcon className="Icon" /> <p>Dashboard</p></li></Link>
+            <Link to="/admin/doctorant"><li className="active"><FaceIcon className="Icon" /> <p>Doctorants préinscrits</p></li></Link>
+            <Link to="/admin/enseignent"><li ><SupervisorAccountIcon className="Icon" /> <p>Gerer les enseignents</p></li></Link>
+            <Link to="/admin/structure-recherche"><li ><SyncAltIcon className="Icon" /> <p>Structure de recherche</p></li></Link>
           </ul>
       </div>
     );

@@ -91,14 +91,14 @@
     width: 100%;
     margin-left: -60px;
 }
-.ListDoctorant>.main>.Content>.AfficheTable>table>tr>th{
+.ListDoctorant>.main>.Content>.AfficheTable>table>thead>tr>th{
     border: 1px solid #05414985;
     height: 40px;
     text-align: center;
     background: #0c899985;
     
 }
-.ListDoctorant>.main>.Content>.AfficheTable>table>tr>td{
+.ListDoctorant>.main>.Content>.AfficheTable>table>tbody>tr>td{
     border: 1px solid #05414985;
     text-align: center;
     height: 35px;

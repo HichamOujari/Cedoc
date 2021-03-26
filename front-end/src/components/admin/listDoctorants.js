@@ -26,87 +26,40 @@ export default class ListDoctorant extends Component {
             <div className="AfficheTable">
               <p className="title">Tableau d'affichage</p>
               <table>
-              <tr>
-                  <th>Nom</th>
-                  <th>Prenom</th>
-                  <th>CNE</th>
-                  <th>CNI</th>
-                  <th>Email</th>
-                  <th>Diplome</th>
-                  <th>Specialité</th>
-                </tr>
-                <tr>
-                  <td>Oujari</td>
-                  <td>Hicham</td>
-                  <td>H11111111</td>
-                  <td>FB111111</td>
-                  <td>hichamoujari99@gmail.com</td>
-                  <td>Ingenieur d'etat</td>
-                  <td>Genie informatique</td>
-                </tr>
-                <tr>
-                  <td>Oujari</td>
-                  <td>Hicham</td>
-                  <td>H11111111</td>
-                  <td>FB111111</td>
-                  <td>hichamoujari99@gmail.com</td>
-                  <td>Ingenieur d'etat</td>
-                  <td>Genie informatique</td>
-                </tr>
-                <tr>
-                  <td>Oujari</td>
-                  <td>Hicham</td>
-                  <td>H11111111</td>
-                  <td>FB111111</td>
-                  <td>hichamoujari99@gmail.com</td>
-                  <td>Ingenieur d'etat</td>
-                  <td>Genie informatique</td>
-                </tr>
-                <tr>
-                  <td>Oujari</td>
-                  <td>Hicham</td>
-                  <td>H11111111</td>
-                  <td>FB111111</td>
-                  <td>hichamoujari99@gmail.com</td>
-                  <td>Ingenieur d'etat</td>
-                  <td>Genie informatique</td>
-                </tr>
-                <tr>
-                  <td>Oujari</td>
-                  <td>Hicham</td>
-                  <td>H11111111</td>
-                  <td>FB111111</td>
-                  <td>hichamoujari99@gmail.com</td>
-                  <td>Ingenieur d'etat</td>
-                  <td>Genie informatique</td>
-                </tr>
-                <tr>
-                  <td>Oujari</td>
-                  <td>Hicham</td>
-                  <td>H11111111</td>
-                  <td>FB111111</td>
-                  <td>hichamoujari99@gmail.com</td>
-                  <td>Ingenieur d'etat</td>
-                  <td>Genie informatique</td>
-                </tr>
-                <tr>
-                  <td>Oujari</td>
-                  <td>Hicham</td>
-                  <td>H11111111</td>
-                  <td>FB111111</td>
-                  <td>hichamoujari99@gmail.com</td>
-                  <td>Ingenieur d'etat</td>
-                  <td>Genie informatique</td>
-                </tr>
-                <tr>
-                  <td>Oujari</td>
-                  <td>Hicham</td>
-                  <td>H11111111</td>
-                  <td>FB111111</td>
-                  <td>hichamoujari99@gmail.com</td>
-                  <td>Ingenieur d'etat</td>
-                  <td>Genie informatique</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>CNE</th>
+                    <th>CNI</th>
+                    <th>Email</th>
+                    <th>Diplome</th>
+                    <th>Specialité</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Oujari</td>
+                    <td>Hicham</td>
+                    <td>H11111111</td>
+                    <td>FB111111</td>
+                    <td>hichamoujari99@gmail.com</td>
+                    <td>Ingenieur d'etat</td>
+                    <td>Genie informatique</td>
+                  </tr>
+                  <tr>
+                    <td>Oujari</td>
+                    <td>Hicham</td>
+                    <td>H11111111</td>
+                    <td>FB111111</td>
+                    <td>hichamoujari99@gmail.com</td>
+                    <td>Ingenieur d'etat</td>
+                    <td>Genie informatique</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
               </table>
             </div>
           </div>
