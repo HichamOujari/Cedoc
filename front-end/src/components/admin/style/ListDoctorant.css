@@ -1,0 +1,122 @@
+.ListDoctorant{
+    display: flex;
+
+}
+.ListDoctorant>.left{
+    
+}
+.ListDoctorant>.main{
+    width: Calc(100% - 250px);
+}
+
+.ListDoctorant>.main>.Content{
+    height: Calc(100vh - 50px);
+    padding-left: 60px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.ListDoctorant>.main>.Content::-webkit-scrollbar{
+    width: 1px;
+}
+.ListDoctorant>.main>.Content>.path{
+    margin-top: 30px;
+    font-size: 17px;
+    margin-left: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ListDoctorant>.main>.Content>.ImportExcel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ListDoctorant>.main>.Content>.ImportExcel>.Title{
+    font-weight: 900;
+    font-size: 23px;
+    color: #5e5959;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ListDoctorant>.main>.Content>.ImportExcel>.Upload{
+    background: #0c899954;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 9px;
+    cursor: pointer;
+
+}
+.ListDoctorant>.main>.Content>.ImportExcel>.Upload:hover .Icon{
+    animation: 2s ZomDeZom infinite;
+}
+.ListDoctorant>.main>.Content>.ImportExcel>.Upload>.Icon{
+    font-size: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.ListDoctorant>.main>.Content>.ImportExcel>.Upload>.text{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ListDoctorant>.main>.Content>.ImportExcel>.SubmitImport{
+    background: white;
+    border: 2px solid #0c899954;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-weight:600;
+}
+
+.ListDoctorant>.main>.Content>.AfficheTable{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.ListDoctorant>.main>.Content>.AfficheTable>.title{
+    font-weight: 900;
+    font-size: 23px;
+    color: #5e5959;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ListDoctorant>.main>.Content>.AfficheTable>table{
+    width: 100%;
+    margin-left: -60px;
+}
+.ListDoctorant>.main>.Content>.AfficheTable>table>tr>th{
+    border: 1px solid #05414985;
+    height: 40px;
+    text-align: center;
+    background: #0c899985;
+    
+}
+.ListDoctorant>.main>.Content>.AfficheTable>table>tr>td{
+    border: 1px solid #05414985;
+    text-align: center;
+    height: 35px;
+}
+
+@keyframes ZomDeZom{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.15);
+    }40%{
+        transform: scale(1.20);
+    }60%{
+        transform: scale(1.25);
+    }80%{
+        transform: scale(1.15);
+    }100%{
+        transform: scale(1);
+    }
+}

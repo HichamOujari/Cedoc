@@ -1,33 +1,26 @@
 import React from 'react';
-import './App.css';
 import Home from "./components/home/Home";
-
+import {BrowserRouter as Router , Route,Switch} from "react-router-dom"
+import ListDoctorant from "./components/admin/listDoctorants.js"
 class App extends React.Component{
-  constructor() {
-      super();
-      this.state = {
-          route:'home'
-      }
-  }
-
-
-  render(){
-    const {route} = this.state;
-    return (
-        <div className="App">
-            {route === 'home'
-                ? <Home/>
-                :<div><p>...</p></div>
-
-            }
-        </div>
-    );
-
-  }
-
-
-
-
+    render(){
+        return (
+            <Router>
+                <Route path="/" exact>
+                    <Home/>
+                </Route>
+                <Route exact path="/login">
+                    //Component login by filali
+                </Route>
+                <Route exact path="/inscrire">
+                    //Component login by Ikram
+                </Route>
+                <Route exact path="/admin/doctorants">
+                    <ListDoctorant />
+                </Route>
+            </Router>
+        )
+    }
 }
 
 export default App;

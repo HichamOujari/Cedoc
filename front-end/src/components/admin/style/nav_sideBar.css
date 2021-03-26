@@ -1,0 +1,145 @@
+.Nav{
+    background: #002D39;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    height: 50px;
+    box-shadow: 2px 2px 20px black;
+}
+
+.Nav>.SearchBar{
+    margin-left: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.Nav>.SearchBar>.InputSearch{
+    outline: none;
+    border: 1px solid white;
+    padding-left: 4px;
+    border-radius: 5px;
+    width: 400px;
+}
+.Nav>.SearchBar>.Icon:hover{
+    color: black;
+}
+.Nav>.SearchBar>.Icon{
+    color: gray;
+    cursor: pointer;
+    border-left: 1px solid gray;
+}
+
+.Nav>.right{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+.Nav>.right>.Icon:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.Nav>.right>.Icon{
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 1s;
+    transform-origin: all;
+}
+
+.SideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 250px;
+    position: relative;
+    background: url("../Assets/SideBarBack.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.SideBar>.bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(123, 167, 179, 0.6);
+}
+.SideBar>.logo{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+}
+.SideBar>.logo>.Icon{
+    color: white;
+    margin-right: 14px;
+    transform: scale(1.9);
+}
+.SideBar>.logo>.title{
+    font-family: Merriweather;
+    text-transform: capitalize;
+    font-size: 34px;
+}
+.SideBar>.logo>.title>span{
+    text-transform: uppercase;
+}
+
+.SideBar>.Elements{
+    background: rgb(121, 121, 121,0.8);
+    width: Calc(100% );
+    padding-right: 0;
+    position: absolute;
+    bottom: 25vh;
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 33px;
+
+}
+.SideBar>.Elements>a{
+    text-decoration: none;
+    color: white;
+
+}
+.SideBar>.Elements>a>li:hover{
+    background: rgba(128, 193, 211, 0.8);
+}
+.SideBar>.Elements>a>li{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    transition: 1s;
+    transform-origin: all;
+}
+.SideBar>.Elements>a>.active{
+    background: rgba(128, 193, 211, 0.8);
+}
+.SideBar>.Elements>a>li>.Icon{
+    transform: scale(1.4);
+}
+.SideBar>.Elements>a>li>p{
+    margin-bottom: -2px;
+    margin-left: 10px;
+}
+
+@media (max-width:1050px){
+    .SideBar{
+        display: none;
+    }
+    .ListDoctorant>.main>.Content>.AfficheTable>table{
+        width: 100%;
+    }
+    .ListDoctorant>.main{
+        width: 100%;
+    }
+}
