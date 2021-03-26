@@ -6,7 +6,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 export default class Nav extends Component {
   render() {
     return (
-      <div className="Nav">
+      <div className="NavBarAdmin">
         <div className="SearchBar">
           <input type="text" placeholder="Recherche ..." className="InputSearch" />
           <SearchIcon className="Icon" />

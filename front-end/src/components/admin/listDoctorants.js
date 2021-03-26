@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from "./nav.js"
-import SideBar from "./sideBar.js"
 import "./style/ListDoctorant.css"
+import SideBar from "./sideBar.js"
 import BackupIcon from '@material-ui/icons/Backup';
 export default class ListDoctorant extends Component {
   render() {
