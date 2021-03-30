@@ -2,34 +2,30 @@ import React, { Component } from 'react';
 import Title from "../outils/title"
 
 export default class MainActualite extends Component {
-  Attribute = ["Nom","Prénom","CNE","CNI","Equipe","Encadrant"]
+  Attribute = ["Nom","Prénom","CNE","Equipe","Encadrant"]
   data = [
         {
             nom:"Oujari",
             prenom:"Hicham",
             CNE:"FB11111",
-            CNI:"H111111",
             equipe:"Big DATA",
             Encadrant:"El-Faddouli"
         },{
             nom:"Oujari",
             prenom:"Hicham",
             CNE:"FB11111",
-            CNI:"H111111",
             equipe:"Big DATA",
             Encadrant:"El-Faddouli"
         },{
             nom:"Oujari",
             prenom:"Hicham",
             CNE:"FB11111",
-            CNI:"H111111",
             equipe:"Big DATA",
             Encadrant:"El-Faddouli"
         },{
             nom:"Oujari",
             prenom:"Hicham",
             CNE:"FB11111",
-            CNI:"H111111",
             equipe:"Big DATA",
             Encadrant:"El-Faddouli"
         }

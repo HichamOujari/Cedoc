@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from "../home/navigation/Navigation";
+import Navigation from "../home/navigation/Navigation"
 import MainActualite from "./mainActualite"
 import "./actualite.css"
 
