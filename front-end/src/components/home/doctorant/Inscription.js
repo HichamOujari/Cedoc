@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./Inscription.css"
+import Title from "../../outils/title"
 
 function Inscription() {
 
-    return (
+    return (<>
         <div className="contain">
-            <h1>Inscription Doctorant</h1>
+            
+            <div className="TopTitle">
+                <Title title="Inscription Doctorant" />
+            </div>
             <div className="insc">
                 <p className="lbl1">
                     <label>Numer de dossier</label><br/>
@@ -60,7 +64,8 @@ function Inscription() {
                 </p>
             </div>
         </div>
+    </>
     )
 }
 
-export default Inscription
+export default Inscription;

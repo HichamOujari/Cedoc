@@ -2,12 +2,12 @@ import React from 'react'
 import "./Login.css"
 
 function Login() {
-    return (
+    return (<>
         <div className="back-login">
             <div className="form">
                 <div className="container">
                     <h1>Sing In</h1>
-                        <div className="formulaire">
+                        <form action="/admin/" className="formulaire">
                             <p>
                                 <input className="inp1" type="text" placeholder="Enter Username" required/>
                             </p>
@@ -22,12 +22,13 @@ function Login() {
                                 <button>Sing In</button>
                             </p>
                             <p>
-                                <a>Mot de passe oublié</a>
+                                <a href="/forget">Mot de passe oublié</a>
                             </p>
-                        </div>
+                        </form>
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

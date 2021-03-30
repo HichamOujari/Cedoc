@@ -7,7 +7,7 @@ export default class ListEnseignants extends Component {
   render() {
     return (
       <div className="ListDoctorant">
-        <SideBar className="left"/>
+        <SideBar Id={2}  className="left"/>
         <div className="main">
           <Nav />
           <div className="Content">
