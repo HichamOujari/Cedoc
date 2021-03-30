@@ -33,7 +33,7 @@ class Navigation extends React.Component{
                         Actualités
                     </div>
 
-                    <div className=" mid-li dropdown">
+                    <div className=" mid-li dropdown" style={{cursor: "default"}}>
                         Structure de recherche
                             <div className="dropdown-content-structures ">
                                 <div className="d">
@@ -48,7 +48,7 @@ class Navigation extends React.Component{
                             </div>
                     </div>
 
-                    <div className="mid-li dropdown">
+                    <div className="mid-li dropdown" style={{cursor: "default"}}>
                         Doctorant
                             <div className="dropdown-content-doctorant">
                                 <div className="d">
