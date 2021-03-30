@@ -35,7 +35,7 @@ export default class SideBar extends Component {
           </div>
           <ul className="Elements">
             {this.sideBarEle.map((ele,index)=>{
-                return (<Link to={ele.lien}><li className={this.props.Id===index?"active":null}>{ele.icon} <p>{ele.title}</p></li></Link>)
+                return (<Link key={index} to={ele.lien}><li className={this.props.Id===index?"active":null}>{ele.icon} <p>{ele.title}</p></li></Link>)
             })}
           </ul>
       </div>
