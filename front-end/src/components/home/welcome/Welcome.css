@@ -1,6 +1,6 @@
 .welcome-page{
     background-image: url("./background-cedoc-home.png");
-    height: 900px;
+    height: 91vh;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
 .welcome-card{
     width:600px;
     height: 300px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.6);
     color: white;
     text-align: center;
     padding: 80px;
