@@ -21,9 +21,6 @@
     color: white;
 }
 
-
-
-
 .mid-li{
     height: 65px;
     width: 25%;
@@ -36,7 +33,9 @@
     color: white;
     text-align: center;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .dropbtn {
     background-color: black;
