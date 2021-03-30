@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './logoEMI.png';
-
+import logo from './logoEMI.png'; 
 import loginLogo from './loginLogo.png';
 import './Navigation.css';
 import recherche from './recherche.png';
+import { NavLink } from 'react-router-dom';
 
 class Navigation extends React.Component{
     constructor(props) {
@@ -23,7 +23,7 @@ class Navigation extends React.Component{
                             <img  width={100} height={65} src={logo} alt='logo'/>
                         </li>
                     </div>
-                    <div style={{color: "white",fontSize:48,alignSelf:'flex-end',fontFamily:'Optima'}}>
+                    <div style={{color: "white",fontSize:43,alignSelf:'flex-end',fontFamily:'Optima'}}>
                         <li >Cedoc EMI</li>
                     </div>
 
@@ -52,7 +52,7 @@ class Navigation extends React.Component{
                         Doctorant
                             <div className="dropdown-content-doctorant">
                                 <div className="d">
-                                    Inscription
+                                    <NavLink style={{textDecoration: 'none',color : "white"}} exact to="/doctorant/inscription">Inscription</NavLink>
                                 </div>
                                 <div className="d" >
                                     Réinscription
@@ -60,8 +60,8 @@ class Navigation extends React.Component{
                             </div>
                     </div>
                     <div className="search-bar">
-                        <li style={{marginLeft:40}}>
-                            <input type="text" id="search" size={16}/>
+                        <li style={{marginLeft:20}}>
+                            <input type="text" id="search" size={12}/><span style={{opacity : 0}}>j</span>
                             <a href="#gg">
                                 <img width={30} height={30} src={recherche} alt='recherche' />
                             </a>
@@ -71,7 +71,7 @@ class Navigation extends React.Component{
                 </div>
                 <div className="right-nav">
 
-                    <p id="login">Login </p>
+                    <p id="login"><NavLink style={{textDecoration: 'none'}} exact to="/cedoc/login">Login</NavLink> </p>
 
 
 
