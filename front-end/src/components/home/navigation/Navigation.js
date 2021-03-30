@@ -60,7 +60,7 @@ class Navigation extends React.Component{
                     <div className="search-bar">
 
                         <li style={{marginLeft:2,display:"flex"}}>
-                            <input placeholder="recherche ..." type="text" id="search" size={16}/>
+                            <input placeholder="recherche ..." type="text" id="search" size={16} style={{marginLeft:30,borderRadius:8}}/>
                             <a href="#gg">
                                 <img width={20} style={{marginLeft:2}} height={20} src={recherche} alt='recherche' />
                             </a>

@@ -142,3 +142,7 @@
         margin-left: 15px;
     }
 }
+
+.valider-btn:hover{
+    background-color: deepskyblue;
+}

@@ -60,7 +60,7 @@ function Inscription() {
                     </div>
                 </p>
                 <p>
-                    <button>Valider</button>
+                    <button className="valider-btn">Valider</button>
                 </p>
             </div>
         </div>
