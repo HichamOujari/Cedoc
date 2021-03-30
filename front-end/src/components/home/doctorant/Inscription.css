@@ -1,0 +1,144 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+.contain
+{
+    text-align: center;
+    margin-top: 20px;;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contain>.TopTitle{
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.insc
+{   
+    box-shadow:  0 0 10px  rgb(158, 224, 219);
+    -moz-box-shadow: 0 0 10px  rgb(158, 224, 219);
+    -webkit-box-shadow: 0 0 10px  rgb(158, 224, 219);
+    -o-box-shadow: 0 0 10px  rgb(158, 224, 219);
+    border : 0px solid black;
+    padding: 15px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.insc .inp3
+{
+    width: 600px;
+    border-radius: 5px;
+    border : 2px solid green ;
+}
+
+.sec .inp2
+{
+    width: 290px;
+    border-radius: 5px;
+    border : 2px solid green ;
+}
+
+.lbl2 label
+{
+    margin-right: 220px;
+}
+
+.lbl1 label
+{
+    margin-right: 430px;
+}
+
+.insc button
+{
+    border-radius: 5px;
+    width: 300px;
+    border : 2px solid green;
+    background-color: rgb(213, 228, 213);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.upload
+{
+    background-color: rgb(69, 163, 153);
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.upl
+{
+    width: 600px;
+    margin: auto;
+}
+
+.upload p
+{
+    color: white;
+    font-size: 25px;
+}
+
+.fa-font
+{
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1050px)
+{
+    .insc
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 760px)
+{
+    .insc
+    {
+        margin : auto;
+    }
+    .sec
+    {
+        display: block;
+    }
+
+    .upl
+    {
+        width: 400px;
+    }
+
+    .sec .inp2
+    {
+        width: 400px;
+    }
+
+    .insc .inp3
+    {
+        width: 400px;
+    }
+
+    .lbl1 label
+    {
+        margin-right: 220px;
+    }
+
+    .lbl2 label
+    {
+        margin-right: 320px;
+    }
+
+    #inp2
+    {
+        margin-left: 15px;
+    }
+}

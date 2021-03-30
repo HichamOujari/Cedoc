@@ -6,6 +6,25 @@ import SyncAltIcon from '@material-ui/icons/SyncAlt';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 export default class SideBar extends Component {
+  sideBarEle = [
+    {
+      title:"Dashboard",
+      icon:<DashboardIcon className="Icon" />,
+      lien:"/admin/"
+    },{
+      title:"Doctorants préinscrits",
+      icon:<FaceIcon className="Icon" />,
+      lien:"/admin/doctorants"
+    },{
+      title:"Gerer les enseignants",
+      icon:<SupervisorAccountIcon className="Icon" />,
+      lien:"/admin/enseignants"
+    },{
+      title:"Structure de recherche",
+      icon:<SyncAltIcon className="Icon" />,
+      lien:"/admin/structure-recherche"
+    },
+  ]
   render() {
     return (
       <div className="SideBar">
@@ -15,10 +34,9 @@ export default class SideBar extends Component {
             <h3 className="title">Cedoc <span>EMI</span></h3>
           </div>
           <ul className="Elements">
-            <Link to="/admin/"><li><DashboardIcon className="Icon" /> <p>Dashboard</p></li></Link>
-            <Link to="/admin/doctorant"><li className="active"><FaceIcon className="Icon" /> <p>Doctorants préinscrits</p></li></Link>
-            <Link to="/admin/enseignent"><li ><SupervisorAccountIcon className="Icon" /> <p>Gerer les enseignents</p></li></Link>
-            <Link to="/admin/structure-recherche"><li ><SyncAltIcon className="Icon" /> <p>Structure de recherche</p></li></Link>
+            {this.sideBarEle.map((ele,index)=>{
+                return (<Link key={index} to={ele.lien}><li className={this.props.Id===index?"active":null}>{ele.icon} <p>{ele.title}</p></li></Link>)
+            })}
           </ul>
       </div>
     );

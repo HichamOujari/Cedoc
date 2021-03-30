@@ -14,13 +14,12 @@
     align-self: flex-start;
     border-radius: 40% ;
 }
-
+.logoImageAcu{
+    margin-left: 70px;
+}
 .text-logo{
     color: white;
 }
-
-
-
 
 .mid-li{
     height: 65px;
@@ -34,7 +33,9 @@
     color: white;
     text-align: center;
     padding: 14px 16px;
-    font-size: 21px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .dropbtn {
     background-color: black;
@@ -128,6 +129,7 @@
     padding: 14px 16px;
     font-size: 24px;
     color: deepskyblue;
+    text-decoration: none;
 }
 
 .left-nav{

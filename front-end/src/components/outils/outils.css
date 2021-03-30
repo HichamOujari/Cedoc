@@ -1,0 +1,61 @@
+
+/* titleComp */
+
+.titleComp{
+    font-size: 35px;
+    font-weight: 700;
+}
+.titleComp>.text{
+    font-family: "kanit";
+    margin-bottom: 0;
+    padding: 0;
+}
+.titleComp>.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titleComp>.border>.C1{
+    width: 33%;
+    height: 6px;
+    background-color: black;
+}
+.titleComp>.border>.C2{
+    background-color: #0C9980;
+    width: 33%;
+    height: 6px;
+}
+.titleComp>.border>.C3{
+    width: 33%;
+    height: 6px;
+    background-color: black;
+}
+
+
+/* table */
+
+.TableComp{
+
+}
+.TableComp>table{
+    
+}
+.TableComp>table>thead{
+    
+}
+.TableComp>table>thead>tr{
+    
+}
+.TableComp>table>thead>th{
+    
+}
+
+.TableComp>table>tbody{
+    
+}
+.TableComp>table>tbody>tr{
+    
+}
+.TableComp>table>tbody>td{
+    
+}

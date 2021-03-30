@@ -110,8 +110,7 @@ class Welcome extends React.Component{
                         }}/>
                     <p style={{fontSize:34}}><b>WELCOME TO CEDOC EMI</b></p>
                     <p style={{fontSize:28}}>CYCLE DOCTORAL</p>
-                    <p style={{fontFamily:"Comic Sans MS",fontSize:18}}>Rabat</p>
-                    <button className="read-more-button">Read more</button>
+                    <p style={{fontFamily:"Comic Sans MS",fontSize:18,marginBottom:40}}>Rabat</p>
                 </div>
             </div>
         )
