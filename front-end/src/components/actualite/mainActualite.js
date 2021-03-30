@@ -51,7 +51,6 @@ export default class MainActualite extends Component {
                                     <td key={index}>{ele.nom}</td>
                                     <td key={index}>{ele.prenom}</td>
                                     <td key={index}>{ele.CNE}</td>
-                                    <td key={index}>{ele.CNI}</td>
                                     <td key={index}>{ele.equipe}</td>
                                     <td key={index}>{ele.Encadrant}</td>
                                 </tr>
