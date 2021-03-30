@@ -69,8 +69,10 @@ class Navigation extends React.Component{
 
                 </div>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} className="right-nav">
-                    <Link to="/login" id="login">Login </Link>
-                    <img style={{borderRadius:80,cursor:"pointer"}}  width={64} height={60} src={loginLogo} alt="logo" />
+                    <Link to="/login" id="login">Login
+                        <img style={{borderRadius:80,cursor:"pointer"}}  width={64} height={60} src={loginLogo} alt="logo" />
+                    </Link>
+
                 </div>
             </ul>
         )
