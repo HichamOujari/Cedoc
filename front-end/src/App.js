@@ -3,7 +3,7 @@ import Home from "./components/home/Home";
 import {BrowserRouter as Router , Route} from "react-router-dom"
 import ListDoctorant from "./components/admin/listDoctorants.js"
 import Actualite from "./components/actualite/actualite"
-import Login from "./components/auth/login"
+import Login from "./components/hicham/login"
 
 class App extends React.Component{
     render(){
