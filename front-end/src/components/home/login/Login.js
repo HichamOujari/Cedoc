@@ -6,7 +6,7 @@ function Login() {
         <div className="back-login">
             <div className="form">
                 <div className="container">
-                    <h1>Sing In</h1>
+                    <h1>Sign In</h1>
                         <form action="/admin/" className="formulaire">
                             <p>
                                 <input className="inp1" type="text" placeholder="Enter Username" required/>
@@ -19,7 +19,7 @@ function Login() {
                                 <input type="checkbox"/> <label>Show password</label>
                             </p>
                             <p>
-                                <button>Sing In</button>
+                                <button>Sign In</button>
                             </p>
                             <p>
                                 <a href="/forget">Mot de passe oublié</a>
