@@ -104,7 +104,10 @@
 .mid-li:hover{
     background-color: deepskyblue;
     color: black;
-
+    cursor: default;
+}
+.actu:hover{
+    cursor: pointer;
 }
 
 .mid-nav{

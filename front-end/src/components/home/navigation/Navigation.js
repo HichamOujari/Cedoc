@@ -25,42 +25,37 @@ class Navigation extends React.Component{
                     </div>
                 </Link>
                 <div className="mid-nav">
-                    <Link className="mid-li" to="/actualites">
-                        
-                            Actualités
+                    <Link className="mid-li actu" to="/actualites">
+
+                        Actualités
                     </Link>
 
-<<<<<<< HEAD
-                    <div className=" mid-li dropdown" style={{cursor: "default"}}>
-                        Structure de recherche
-=======
                     <div className=" mid-li dropdown">
                         Structures de recherche
->>>>>>> 5528e246107657bf340cd1bd7304f0753539d008
-                            <div className="dropdown-content-structures ">
-                                <Link className="d" to="/structure-de-recherche/equipe">
-                                    Equipe
-                                </Link>
-                                <Link className="d" to="/structure-de-recherche/equipe">
-                                    Laboratoire
-                                </Link>
-                                <Link className="d" to="/structure-de-recherche/equipe">
-                                    Centre
-                                </Link>
-                            </div>
+                        <div className="dropdown-content-structures ">
+                            <Link className="d" to="/structure-de-recherche/equipe">
+                                Equipe
+                            </Link>
+                            <Link className="d" to="/structure-de-recherche/equipe">
+                                Laboratoire
+                            </Link>
+                            <Link className="d" to="/structure-de-recherche/equipe">
+                                Centre
+                            </Link>
+                        </div>
                     </div>
 
-                    <div className="mid-li dropdown" style={{cursor: "default"}}>
+                    <div className="mid-li dropdown">
                         Doctorant
-                            <div className="dropdown-content-doctorant">
+                        <div className="dropdown-content-doctorant">
 
-                                <Link to="/inscription" className="d">
-                                    Inscription
-                                </Link>
-                                <Link to="/re-inscription"  className="d" >
-                                    Réinscription
-                                </Link>
-                            </div>
+                            <Link to="/inscription" className="d">
+                                Inscription
+                            </Link>
+                            <Link to="/re-inscription"  className="d" >
+                                Réinscription
+                            </Link>
+                        </div>
                     </div>
                     <div className="search-bar">
 

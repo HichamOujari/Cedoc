@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="222e7ee3-4542-4952-8006-c074e0dd6f2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/actualite/actualite.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/actualite/actualite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/actualite/mainActualite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/admin/Assets/shutterstock-614623763-granite-dealers-4-exapp.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/admin/dashboardAdmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/admin/excelToJson/MakeColumns.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/admin/excelToJson/excelToJson.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/admin/excelToJson/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/admin/listEnseignant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/admin/listStructure.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/home/doctorant/Inscription.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/home/doctorant/Inscription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/home/login/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/home/login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/home/login/background-cedoc-login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/home/navigation/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/outils/outils.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/outils/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/outils/title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/admin/listDoctorants.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/admin/listDoctorants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/admin/sideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/admin/sideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/navigation/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/components/home/welcome/Welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/welcome/Welcome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/home/welcome/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/home/welcome/Welcome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +76,7 @@
       <workItem from="1616803246274" duration="852000" />
       <workItem from="1617108841179" duration="82000" />
       <workItem from="1617108934470" duration="457000" />
+      <workItem from="1617109423566" duration="1061000" />
     </task>
     <task id="LOCAL-00001" summary="initialisation">
       <created>1616438416442</created>
