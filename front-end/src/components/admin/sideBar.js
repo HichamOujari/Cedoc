@@ -16,8 +16,8 @@ export default class SideBar extends Component {
           </div>
           <ul className="Elements">
             <Link to="/admin/"><li><DashboardIcon className="Icon" /> <p>Dashboard</p></li></Link>
-            <Link to="/admin/doctorant"><li className="active"><FaceIcon className="Icon" /> <p>Doctorants préinscrits</p></li></Link>
-            <Link to="/admin/enseignent"><li ><SupervisorAccountIcon className="Icon" /> <p>Gerer les enseignents</p></li></Link>
+            <Link to="/admin/doctorants"><li className="active"><FaceIcon className="Icon" /> <p>Doctorants préinscrits</p></li></Link>
+            <Link to="/admin/enseignants"><li ><SupervisorAccountIcon className="Icon" /> <p>Gerer les enseignants</p></li></Link>
             <Link to="/admin/structure-recherche"><li ><SyncAltIcon className="Icon" /> <p>Structure de recherche</p></li></Link>
           </ul>
       </div>
