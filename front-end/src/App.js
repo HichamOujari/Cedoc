@@ -9,6 +9,8 @@ import Login from "./components/home/login/Login"
 import Navigation from "./components/home/navigation/Navigation"
 import ListStructure from "./components/admin/listStructure"
 import DashboardAdmin from "./components/admin/dashboardAdmin"
+import Chefenseignant from './components/admin/ChefEnseignat/chefenseignant';
+import Enseaignant from './components/admin/ChefEnseignat/enseignant';
 
 class App extends React.Component{
     render(){
@@ -40,6 +42,12 @@ class App extends React.Component{
                 </Route>
                 <Route exact path="/actualites">
                     <Actualite />
+                </Route>
+                <Route exact path="/chefenseignant">
+                    <Chefenseignant/>
+                </Route>
+                <Route exact path="/enseignant">
+                    <Enseaignant/>
                 </Route>
             </Router>
         )

@@ -1,0 +1,80 @@
+.Chefenseignant>.mainn{
+    width: Calc(100% - 250px);
+    margin-left: 250px;
+}
+
+.Chefenseignant>.mains{
+    margin-top: -50px;
+}
+
+.Chefenseignant>.container
+{
+    margin-left: 300px;
+    margin-top: -640px;
+}
+
+.Chefenseignant>.container h4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 45, 89);
+}
+
+.Chefenseignant>.container p
+{
+    font-size: 18px;
+}
+
+.Chefenseignant>.container>.doct
+{
+    text-align: center;
+    margin-top: 70px;
+    background-color: rgb(204, 235, 240,0.3);
+    border : 0.5px solid rgb(0, 0, 0,0.4);
+    border-radius: 5px;;
+}
+
+.Chefenseignant>.container>.doct p
+{
+    padding: 3px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Chefenseignant>.container>.tab>table
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.Chefenseignant>.container>.tab>table>thead>th
+{
+    border: 1px solid #05414985;
+    height: 40px;
+    text-align: center;
+    background: #0c899985;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.Chefenseignant>.container>.tab>table>tbody>tr>td
+{
+    border: 1px solid #05414985;
+    text-align: center;
+    height: 35px;
+    padding: 18px;
+}
+
+.Chefenseignant>.container>.tab>table>tbody>tr> .acc
+{
+    color: green;
+    cursor: pointer;
+}
+
+.Chefenseignant>.container>.tab>table>tbody>tr> .ref
+{
+    color: red;
+    cursor: pointer;
+}
