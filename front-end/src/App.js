@@ -43,10 +43,8 @@ class App extends React.Component{
                 <Route exact path="/actualites">
                     <Actualite />
                 </Route>
-                <Route exact path="/chefenseignant">
-                    <Chefenseignant/>
-                </Route>
-                <Route exact path="/enseignant">
+                <Route exact path="/chefenseignant/:id" component={Chefenseignant}/>
+                <Route exact path="/enseignant/:id">
                     <Enseaignant/>
                 </Route>
             </Router>

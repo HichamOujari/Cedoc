@@ -49,7 +49,7 @@
     margin-top: 5px;
 }
 
-.Chefenseignant>.container>.tab>table>thead>th
+.Chefenseignant>.container>.tab>table>thead>tr>th
 {
     border: 1px solid #05414985;
     height: 40px;

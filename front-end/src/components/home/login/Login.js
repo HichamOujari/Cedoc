@@ -8,13 +8,13 @@ function Login() {
     const [username,setUsername]=useState("");
     const [password,setPassword]=useState("");
     const [message,setMessage]=useState("");
-
+    
     const history = useHistory();
 
     window.history.forward();
 
     const login = () =>{
-        Axios.post("http://localhost:3001/login",{
+        Axios.post("http://localhost:3001/login/enseignant",{
             username : username,
             password : password
         }).then((response)=>{
@@ -24,7 +24,18 @@ function Login() {
             }
             else
             {
-                history.push("/admin");
+                if(response.data[0].specialite=="chef")
+                {
+                    history.push("/chefenseignant/"+response.data[0].id);
+                }
+                else if(response.data[0].specialite=="ADMIN")
+                {
+                    history.push("/admin");
+                }
+                else
+                {
+                    history.push("/enseignant/"+response.data[0].id);
+                }
             }
         })
     }
@@ -36,7 +47,7 @@ function Login() {
                     <div className="container">
                         <h1>Sign In</h1>
                             <div className="formulaire">
-                                <p>
+                                <p className="erreur">
                                     {message}
                                 </p>
                                 <p>
