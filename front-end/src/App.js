@@ -44,9 +44,8 @@ class App extends React.Component{
                     <Actualite />
                 </Route>
                 <Route exact path="/chefenseignant/:id" component={Chefenseignant}/>
-                <Route exact path="/enseignant/:id">
-                    <Enseaignant/>
-                </Route>
+                <Route exact path="/enseignant/:id" component={Enseaignant}/>
+
             </Router>
         )
     }

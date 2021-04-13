@@ -13,6 +13,16 @@ function Login() {
 
     window.history.forward();
 
+    const Showpass=() =>{
+        if(document.getElementById("check").checked==true)
+        {
+            document.getElementById("pass").setAttribute("type","text");
+        }
+        else{
+            document.getElementById("pass").setAttribute("type","password");
+        }
+    }
+
     const login = () =>{
         Axios.post("http://localhost:3001/login/enseignant",{
             username : username,
@@ -55,16 +65,16 @@ function Login() {
                                 </p>
                                 <br/>
                                 <p>
-                                    <input className="inp1" type="password" placeholder="Enter Password" onChange={(e)=>setPassword(e.target.value)} required />
+                                    <input id="pass" className="inp1" type="password" placeholder="Enter Password" onChange={(e)=>setPassword(e.target.value)} required />
                                 </p>
                                 <p className="show">
-                                    <input type="checkbox"/> <label>Show password</label>
+                                    <input id="check" type="checkbox" onClick={Showpass}/> <label>Show password</label>
                                 </p>
                                 <p>
                                     <button onClick={login}>Sign In</button>
                                 </p>
                                 <p>
-                                    <a href="/forget">Mot de passe oublié</a>
+                                    <a style={{fontWeight:"bold",fontSize:"17px"}} href="/forget">Mot de passe oublié</a>
                                 </p>
                             </div>
                     </div>

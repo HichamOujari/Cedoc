@@ -67,14 +67,19 @@
     padding: 18px;
 }
 
-.Chefenseignant>.container>.tab>table>tbody>tr> .acc
+.Chefenseignant>.container>.tab>table>tbody>td> .acc
 {
-    color: green;
+    background-color: green;
     cursor: pointer;
+    color: white;
+    padding: 5px;
 }
 
-.Chefenseignant>.container>.tab>table>tbody>tr> .ref
+.Chefenseignant>.container>.tab>table>tbody>td> .ref
 {
-    color: red;
+    background-color: red;
     cursor: pointer;
+    color: white;
+    padding: 5px;
+    width:80px;
 }

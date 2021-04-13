@@ -1,7 +1,7 @@
 let connection = require("../config/db");
 
 const Login = (u,p,req,res) =>{
-    connection.query("select * from enseignant where username = ? and password = ?",
+    connection.query("select * from enseignant where username = ? and password = ? LIMIT 1",
     [u,p],
     (err,result)=>{
         if(err){

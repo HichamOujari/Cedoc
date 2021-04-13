@@ -7,16 +7,47 @@ import Axios from "axios"
 function Chefenseignant(props) {
 
     const [sdr,setSdr]=useState([]);
-    const [strr,setStrr] = useState("");
+    const [strr,setStrr] = useState(0);
     const [docts,setDocts] = useState([]);
+    const [sdrr,setSdrr]=useState([]);
+    const [idd,setId]=useState(0);
+
+    const Disabled = ()=>
+    {
+        document.querySelector(idd).setAttribute("disabled","true");
+        document.querySelector(idd).setAttribute("disabled","true");
+    }
+
+    const CoouleurAcc = () =>
+    {
+        document.querySelector(idd).style.backgroundColor="green";
+        document.querySelector(idd).style.color="white";
+    }
+
+    const CoouleurRef = () =>
+    {
+        document.querySelector(idd).style.backgroundColor="red";
+        document.querySelector(idd).style.color="white";
+    }
 
     Axios.post("http://localhost:3001/enseignant/"+props.match.params.id).then((response) => {
+        setStrr(response.data[0].structurederecherche);
         setSdr(response.data)
     });
 
-    Axios.post("http://localhost:3001/enseignantdoct/").then((response) => {
+    Axios.post("http://localhost:3001/enseignantdoct/",{strr : strr}).then((response) => {
         setDocts(response.data)
     });
+
+    Axios.post("http://localhost:3001/enseignantsdr/",{strr : strr}).then((response) => {
+        setSdrr(response.data)
+    });
+
+    const deleteDoct = (id) =>{
+        Axios.delete(`http://localhost:3001/doctorantdel/${id}`).then((response) => {
+           
+          });
+        };
 
     return (
         <div className="Chefenseignant">
@@ -29,14 +60,14 @@ function Chefenseignant(props) {
             <div className="container">
                 <h4>Enseignants</h4>
                 <br/>
-                {
-                    sdr.map(str=>(
-                        <input hidden value={str.structure_de_recherche} onChange={(event)=>setStrr(event.target.value)}/>
-                    ))
-                }
-                <p>Cedoc EMI / structures de recherches /Réseaux informatique</p>
+                {sdrr.map(sdrs=>(
+                    <p key={sdrs.id}>Cedoc EMI / structures de recherches /{sdrs.nom}</p>
+                ))}
+                
                 <div className="doct">
-                    <p>Doctotants du Réseaux informatique</p>
+                    {sdrr.map(sdrs=>(
+                        <p key={sdrs.id}>Doctorants du {sdrs.nom}</p>
+                    ))}
                 </div>
                 <div className="tab">
                     <table>
@@ -58,13 +89,14 @@ function Chefenseignant(props) {
                                     <td>{doct.mail}</td>
                                     <td>{doct.tele}</td>
                                     <td>{doct.SpecialitéDiplome1}</td>
-                                    <td className="acc">Accepter</td>
-                                    <td className="ref">Refuser</td>
+                                    <td ><button id="Acc" className={setId(doct.id)} className="acc" onClick={Disabled,CoouleurAcc}>Accepter</button></td>
+                                    <td ><button id="Ref" className={setId(doct.id)} className="ref" onClick={deleteDoct(doct.id),Disabled,CoouleurRef}>Refuser</button></td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
+                
             </div>
         </div>
     )
