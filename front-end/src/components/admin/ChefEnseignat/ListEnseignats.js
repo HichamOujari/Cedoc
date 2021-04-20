@@ -15,13 +15,12 @@ function ListEnseignats() {
     Axios.post("http://localhost:3001/enseignant",{
         idc : Cookies.get("idc")
     }).then((response) => {
-        console.log(response.data[0].structurederecherche)
         setStrr(response.data[0].structurederecherche);
     });
 
-    /*Axios.post("http://localhost:3001/enseignantsdr",{strr : strr}).then((response) => {
+    Axios.post("http://localhost:3001/enseignantsdr",{strr : strr}).then((response) => {
         setSdrr(response.data)
-    });*/
+    });
 
     Axios.post("http://localhost:3001/listsenseignant",{strr : strr}).then((response) => {
         setEns(response.data)

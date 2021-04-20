@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Nav from '../nav'
-import SideBar from './sideBarEnseignant'
-import "./chefenseignant.css"
+import SideBar from './sidebar'
+import "../ChefEnseignat/chefenseignant.css"
 import Axios from "axios"
 import Cookies from 'js-cookie'
 
@@ -15,26 +15,8 @@ function Chefenseignant(props) {
     const idc = 0;
     const i = 0;
 
-    const Disabled = ()=>
-    {
-        document.querySelector(idd).setAttribute("disabled","true");
-        document.querySelector(idd).setAttribute("disabled","true");
-    }
-
-    const CoouleurAcc = () =>
-    {
-        document.querySelector(idd).style.backgroundColor="green";
-        document.querySelector(idd).style.color="white";
-    }
-
-    const CoouleurRef = () =>
-    {
-        document.querySelector(idd).style.backgroundColor="red";
-        document.querySelector(idd).style.color="white";
-    }
-
     Axios.post("http://localhost:3001/enseignant",{
-        idc : Cookies.get("idc")
+        idc : Cookies.get("ide")
     }).then((response) => {
         setStrr(response.data[0].structurederecherche);
     });
@@ -48,9 +30,9 @@ function Chefenseignant(props) {
     });
 
     const deleteDoct = (id) =>{
-        Axios.delete(`http://localhost:3001/doctorantdel/${id}`).then((response) => {
+       // Axios.delete(`http://localhost:3001/doctorantdel/${id}`).then((response) => {
            
-          });
+         // });
         };
 
     return (
@@ -62,7 +44,7 @@ function Chefenseignant(props) {
                 <SideBar/>
             </div>
             <div className="container">
-                <h4>Chef d'équipe</h4>
+                <h4>Enseignants</h4>
                 <br/>
                 {sdrr.map(sdrs=>(
                     <p key={sdrs.id}>Cedoc EMI / {sdrs.nom} / Doctorants preinscrire</p>
@@ -82,7 +64,6 @@ function Chefenseignant(props) {
                                 <th>Email</th>
                                 <th>Téléphone</th>
                                 <th>Spécialité</th>
-                                <th colSpan="2">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -93,8 +74,6 @@ function Chefenseignant(props) {
                                     <td>{doct.mail}</td>
                                     <td>{doct.tele}</td>
                                     <td>{doct.SpecialitéDiplome1}</td>
-                                    <td ><button id="Acc" className={setId(doct.id)} className="acc" onClick={Disabled,CoouleurAcc}>Accepter</button></td>
-                                    <td ><button id="Ref" className={setId(doct.id)} className="ref" onClick={deleteDoct(doct.id),Disabled,CoouleurRef}>Refuser</button></td>
                                 </tr>
                             ))}
                         </tbody>

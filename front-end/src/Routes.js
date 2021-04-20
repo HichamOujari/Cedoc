@@ -10,9 +10,11 @@ import Navigation from "./components/home/navigation/Navigation"
 import ListStructure from "./components/admin/listStructure"
 import DashboardAdmin from "./components/admin/dashboardAdmin"
 import Chefenseignant from './components/admin/ChefEnseignat/ListDoctorants';
-import Enseaignant from './components/admin/ChefEnseignat/enseignant';
+import Enseaignant from './components/admin/Enseignant/DashboardEns';
 import AuthApi from './components/home/login/AuthApi';
 import ListEnseignats from './components/admin/ChefEnseignat/ListEnseignats';
+import ListEnsei from './components/admin/Enseignant/ListsEnseignants';
+import ListDoct from './components/admin/Enseignant/ListsDoctorants';
 import DashBoardChefEnseignant from './components/admin/ChefEnseignat/DashBoardEnseignant';
 
 function Routes (){  
@@ -50,6 +52,8 @@ function Routes (){
                 <Switch>
                     <ProtectedLogine path="/login" exact component={Log} aue={Auth.aue}/>
                     <ProtectedEnseignant exact path="/enseignant" component={Enseaignant} aue={Auth.aue}/>
+                    <ProtectedEnseignant exact path="/enseignant/listenseignants" component={ListEnsei} aue={Auth.aue}/>
+                    <ProtectedEnseignant exact path="/enseignant/doctorants" component={ListDoct} aue={Auth.aue}/>
                 </Switch>
             )
         }
@@ -78,6 +82,8 @@ function Routes (){
                     <ProtectedChefEnseignant exact path="/chefenseignant/doctorants" component={Chefenseignant} auc={Auth.auc}/>
                     <ProtectedChefEnseignant exact path="/chefenseignant/enseignants" component={ListEnseignats} auc={Auth.auc}/>
                     <ProtectedEnseignant exact path="/enseignant" component={Enseaignant} aue={Auth.aue}/>
+                    <ProtectedEnseignant exact path="/enseignant/listenseignants" component={ListEnsei} aue={Auth.aue}/>
+                    <ProtectedEnseignant exact path="/enseignant/doctorants" component={ListDoct} aue={Auth.aue}/>
                 </Switch>
         )
     }

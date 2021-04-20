@@ -31,7 +31,6 @@ app.post("/listsdoct",(request,response)=>{
 
 app.post("/listsenseignant",(request,response)=>{
     const strr = request.body.strr;
-    console.log(strr);
     AfficherEnseignant(strr,request,response);
 })
 

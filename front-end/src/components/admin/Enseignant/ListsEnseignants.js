@@ -1,28 +1,30 @@
 import React , {useState} from 'react'
 import Nav from '../nav'
-import SideBar from '../sideBar'
-import "./chefenseignant.css"
+import SideBar from './sidebar'
+import "../ChefEnseignat/ListEnseignant.css"
 import Axios from "axios"
+import Cookies from 'js-cookie'
 
 function Enseignant(props) {
 
-    const [sdr,setSdr]=useState([]);
+    const idc = 0;
     const [strr,setStrr] = useState(0);
-    const [docts,setDocts] = useState([]);
     const [sdrr,setSdrr]=useState([]);
+    const [ens , setEns] = useState([]);
 
-    /*Axios.post("http://localhost:3001/enseignant/"+props.match.params.id).then((response) => {
+    Axios.post("http://localhost:3001/enseignant",{
+        idc : Cookies.get("ide")
+    }).then((response) => {
         setStrr(response.data[0].structurederecherche);
-        setSdr(response.data);
     });
 
-    Axios.post("http://localhost:3001/enseignantdoct/",{strr : strr}).then((response) => {
-        setDocts(response.data);
+    Axios.post("http://localhost:3001/enseignantsdr",{strr : strr}).then((response) => {
+        setSdrr(response.data)
     });
 
-    Axios.post("http://localhost:3001/enseignantsdr/",{strr : strr}).then((response) => {
-        setSdrr(response.data);
-    });*/
+    Axios.post("http://localhost:3001/listsenseignant",{strr : strr}).then((response) => {
+        setEns(response.data)
+    });
 
 
     return (
@@ -37,7 +39,7 @@ function Enseignant(props) {
                 <h4>Enseignants</h4>
                 <br/>
                 {sdrr.map(sdrs=>(
-                    <p key={sdrs.id}>Cedoc EMI / structures de recherches /{sdrs.nom}</p>
+                    <p key={sdrs.id}>Cedoc EMI / {sdrs.nom} / Listes des enseignants</p>
                 ))}
                 <div className="doct">
                     {sdrr.map(sdrs=>(
@@ -56,13 +58,13 @@ function Enseignant(props) {
                             </tr>
                         </thead>
                         <tbody>
-                            {docts.map(doct=>(
-                                <tr key={doct.id}>
-                                    <td>{doct.nom}</td>
-                                    <td>{doct.prenom}</td>
-                                    <td>{doct.mail}</td>
-                                    <td>{doct.tele}</td>
-                                    <td>{doct.SpecialitéDiplome1}</td>
+                            {ens.map(ense=>(
+                                <tr key={ense.id}>
+                                    <td>{ense.nom}</td>
+                                    <td>{ense.prenom}</td>
+                                    <td>{ense.grade}</td>
+                                    <td>{ense.tele}</td>
+                                    <td>{ense.specialite}</td>
                                 </tr>
                             ))}
                             

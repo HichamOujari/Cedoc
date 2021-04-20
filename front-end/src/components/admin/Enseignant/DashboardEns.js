@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Nav from '../nav'
-import SideBar from './sideBarEnseignant'
-import "./DashEnseignant.css";
+import SideBar from './sidebar'
+import "../ChefEnseignat/DashEnseignant.css";
 import Cookies from 'js-cookie';
 import Axios from 'axios';
 
@@ -12,7 +12,7 @@ function DashBoardChefEnseignant() {
     const [sdrr,setSdrr] = useState([]);
 
     Axios.post("http://localhost:3001/enseignant",{
-        idc : Cookies.get("idc")
+        idc : Cookies.get("ide")
     }).then((response) => {
         setStrr(response.data[0].structurederecherche);
     });

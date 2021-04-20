@@ -31,7 +31,8 @@
     margin-top: 70px;
     background-color: rgb(204, 235, 240,0.3);
     border : 0.5px solid rgb(0, 0, 0,0.4);
-    border-radius: 5px;;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .Chefenseignant>.container>.doct p
@@ -42,11 +43,16 @@
     font-family: "Times New Roman", Times, serif;
 }
 
+.Chefenseignant>.container>.tab
+{
+    overflow-y: scroll;
+    height: 350px;
+}
+
 .Chefenseignant>.container>.tab>table
 {
     width: 100%;
     text-align: center;
-    margin-top: 5px;
 }
 
 .Chefenseignant>.container>.tab>table>thead>tr>th

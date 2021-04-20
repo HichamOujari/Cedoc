@@ -32,6 +32,7 @@
     background-color: rgb(204, 235, 240,0.3);
     border : 0.5px solid rgb(0, 0, 0,0.4);
     border-radius: 5px;;
+    margin-bottom: 10px;
 }
 
 .ListEnseignants>.container>.listes p
@@ -42,11 +43,16 @@
     font-family: "Times New Roman", Times, serif;
 }
 
+.ListEnseignants>.container>.tab
+{
+    overflow-y: scroll;
+    height: 350px;
+}
+
 .ListEnseignants>.container>.tab>table
 {
     width: 100%;
     text-align: center;
-    margin-top: 5px;
 }
 
 .ListEnseignants>.container>.tab>table>thead>tr>th
