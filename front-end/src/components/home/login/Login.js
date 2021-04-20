@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Login.css"
 import Axios from "axios";
 import {useHistory} from "react-router-dom";
+import AuthApi from "./AuthApi";
+import Cookies from 'js-cookie';
 
 function Login() {
 
@@ -11,7 +13,7 @@ function Login() {
     
     const history = useHistory();
 
-    window.history.forward();
+    const Auth = useContext(AuthApi);
 
     const Showpass=() =>{
         if(document.getElementById("check").checked==true)
@@ -36,15 +38,21 @@ function Login() {
             {
                 if(response.data[0].specialite=="chef")
                 {
-                    history.push("/chefenseignant/"+response.data[0].id);
+                    Auth.setAuc(true);
+                    Cookies.set("idc",response.data[0].id);
+                    history.push("/chefenseignant");
                 }
                 else if(response.data[0].specialite=="ADMIN")
                 {
+                    Auth.setAuth(true);
+                    Cookies.set("ida",response.data[0].id);
                     history.push("/admin");
                 }
                 else
                 {
-                    history.push("/enseignant/"+response.data[0].id);
+                    Auth.setAue(true);
+                    Cookies.set("ide",response.data[0].id);
+                    history.push("/enseignant");
                 }
             }
         })

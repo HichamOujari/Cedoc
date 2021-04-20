@@ -1,54 +1,46 @@
-import React from 'react';
-import Home from "./components/home/Home";
-import {BrowserRouter as Router , Route} from "react-router-dom"
-import ListDoctorant from "./components/admin/listDoctorants.js"
-import Actualite from "./components/actualite/actualite"
-import ListEnseignants from "./components/admin/listEnseignant"
-import Inscription from "./components/home/doctorant/Inscription"
-import Login from "./components/home/login/Login"
-import Navigation from "./components/home/navigation/Navigation"
-import ListStructure from "./components/admin/listStructure"
-import DashboardAdmin from "./components/admin/dashboardAdmin"
-import Chefenseignant from './components/admin/ChefEnseignat/chefenseignant';
-import Enseaignant from './components/admin/ChefEnseignat/enseignant';
+import Cookies from 'js-cookie';
+import React, { useEffect, useState } from 'react'
+import { BrowserRouter } from 'react-router-dom';
+import AuthApi from "./components/home/login/AuthApi"
+import Routes from './Routes';
 
-class App extends React.Component{
-    render(){
-        return (
-            <Router>
-                <Route path="/" exact>
-                    <Navigation />
-                    <Home/>
-                </Route>
-                <Route path="/login" exact>
-                    <Navigation />
-                    <Login/>
-                </Route>
-                <Route path="/inscription" exact>
-                    <Navigation />
-                    <Inscription/>
-                </Route>
-                <Route exact path="/admin/">
-                    <DashboardAdmin />
-                </Route>
-                <Route exact path="/admin/doctorants">
-                    <ListDoctorant />
-                </Route>
-                <Route exact path="/admin/structure-recherche">
-                    <ListStructure />
-                </Route>
-                <Route exact path="/admin/enseignants">
-                    <ListEnseignants />
-                </Route>
-                <Route exact path="/actualites">
-                    <Actualite />
-                </Route>
-                <Route exact path="/chefenseignant/:id" component={Chefenseignant}/>
-                <Route exact path="/enseignant/:id" component={Enseaignant}/>
+function App() {
 
-            </Router>
-        )
+    const readCookie = () =>{
+        const ida = Cookies.get("ida");
+        const idc = Cookies.get("idc");
+        const ide = Cookies.get("ide");
+        if(ida){
+            setAuth(true);
+        }
+        if(idc)
+        {
+            setAuc(true)
+        }
+        if(ide){
+            setAue(true);
+        }
     }
+
+    useEffect(() => {
+        readCookie();
+    }, [])
+
+    const [auth,setAuth] = useState(false);
+    const [auc,setAuc] = useState(false);
+    const [aue,setAue] = useState(false);
+    
+    return (
+        <div>
+            <div>
+                <AuthApi.Provider value={{auc,setAuc,auth,setAuth,aue,setAue}}>
+                    <BrowserRouter>
+                        <Routes/>
+                    </BrowserRouter>
+                </AuthApi.Provider>
+            </div>
+        </div>
+    )
 }
 
-export default App;
+export default App

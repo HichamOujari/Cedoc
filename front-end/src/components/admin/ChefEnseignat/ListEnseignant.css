@@ -1,0 +1,68 @@
+.ListEnseignants>.mainn{
+    width: Calc(100% - 250px);
+    margin-left: 250px;
+}
+
+.ListEnseignants>.mains{
+    margin-top: -50px;
+}
+
+.ListEnseignants>.container
+{
+    margin-left: 300px;
+    margin-top: -640px;
+}
+
+.ListEnseignants>.container h4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 45, 89);
+}
+
+.ListEnseignants>.container p
+{
+    font-size: 18px;
+}
+
+.ListEnseignants>.container>.listes
+{
+    text-align: center;
+    margin-top: 70px;
+    background-color: rgb(204, 235, 240,0.3);
+    border : 0.5px solid rgb(0, 0, 0,0.4);
+    border-radius: 5px;;
+}
+
+.ListEnseignants>.container>.listes p
+{
+    padding: 3px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.ListEnseignants>.container>.tab>table
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.ListEnseignants>.container>.tab>table>thead>tr>th
+{
+    border: 1px solid #05414985;
+    height: 40px;
+    text-align: center;
+    background: #0c899985;
+    font-size: 17px;
+    padding: 20px;
+}
+
+.ListEnseignants>.container>.tab>table>tbody>tr>td
+{
+    border: 1px solid #05414985;
+    text-align: center;
+    height: 35px;
+    padding: 18px;
+}

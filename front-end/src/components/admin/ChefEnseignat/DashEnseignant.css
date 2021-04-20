@@ -1,0 +1,8 @@
+.DashEnseignant>.mainn{
+    width: Calc(100% - 250px);
+    margin-left: 250px;
+}
+
+.DashEnseignant>.mains{
+    margin-top: -50px;
+}

@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import Nav from '../nav'
-import SideBar from '../sideBar'
+import SideBar from './sideBarEnseignant'
 import "./chefenseignant.css"
 import Axios from "axios"
+import Cookies from 'js-cookie'
 
 function Chefenseignant(props) {
 
@@ -11,6 +12,8 @@ function Chefenseignant(props) {
     const [docts,setDocts] = useState([]);
     const [sdrr,setSdrr]=useState([]);
     const [idd,setId]=useState(0);
+    const idc = 0;
+    const i = 0;
 
     const Disabled = ()=>
     {
@@ -30,23 +33,24 @@ function Chefenseignant(props) {
         document.querySelector(idd).style.color="white";
     }
 
-    Axios.post("http://localhost:3001/enseignant/"+props.match.params.id).then((response) => {
+    Axios.post("http://localhost:3001/enseignant",{
+        idc : Cookies.get("idc")
+    }).then((response) => {
         setStrr(response.data[0].structurederecherche);
-        setSdr(response.data)
     });
 
-    Axios.post("http://localhost:3001/enseignantdoct/",{strr : strr}).then((response) => {
+   /* Axios.post("http://localhost:3001/listsdoct",{strr : strr}).then((response) => {
         setDocts(response.data)
     });
 
-    Axios.post("http://localhost:3001/enseignantsdr/",{strr : strr}).then((response) => {
+    Axios.post("http://localhost:3001/enseignantsdr",{strr : strr}).then((response) => {
         setSdrr(response.data)
-    });
+    });*/
 
     const deleteDoct = (id) =>{
-        Axios.delete(`http://localhost:3001/doctorantdel/${id}`).then((response) => {
+       // Axios.delete(`http://localhost:3001/doctorantdel/${id}`).then((response) => {
            
-          });
+         // });
         };
 
     return (
@@ -58,7 +62,7 @@ function Chefenseignant(props) {
                 <SideBar/>
             </div>
             <div className="container">
-                <h4>Enseignants</h4>
+                <h4>Chef d'équipe</h4>
                 <br/>
                 {sdrr.map(sdrs=>(
                     <p key={sdrs.id}>Cedoc EMI / structures de recherches /{sdrs.nom}</p>

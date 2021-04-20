@@ -11,7 +11,7 @@ function Enseignant(props) {
     const [docts,setDocts] = useState([]);
     const [sdrr,setSdrr]=useState([]);
 
-    Axios.post("http://localhost:3001/enseignant/"+props.match.params.id).then((response) => {
+    /*Axios.post("http://localhost:3001/enseignant/"+props.match.params.id).then((response) => {
         setStrr(response.data[0].structurederecherche);
         setSdr(response.data);
     });
@@ -22,7 +22,7 @@ function Enseignant(props) {
 
     Axios.post("http://localhost:3001/enseignantsdr/",{strr : strr}).then((response) => {
         setSdrr(response.data);
-    });
+    });*/
 
 
     return (

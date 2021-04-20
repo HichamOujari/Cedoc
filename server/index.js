@@ -7,6 +7,7 @@ const Afficher = require('./controllers/enseignant/affenseignant');
 const Afficherdoct = require('./controllers/enseignant/affdoctorants');
 const AfficherSdr = require('./controllers/enseignant/affstructure');
 const Refusdoct = require('./controllers/enseignant/refusdoctorant');
+const AfficherEnseignant = require('./controllers/enseignant/afflistsenseignants');
 
 app.use(cors());
 app.use(express.json());
@@ -18,13 +19,20 @@ app.post("/login/enseignant",(request,response)=>{
    Login(username,password,request,response);
 })
 
-app.post("/enseignant/:id",(request,response)=>{
-    Afficher(request.params.id,request,response);
+app.post("/enseignant",(request,response)=>{
+    const idc = request.body.idc;
+    Afficher(idc,request,response);
 })
 
-app.post("/enseignantdoct",(request,response)=>{
+app.post("/listsdoct",(request,response)=>{
     const strr = request.body.strr;
     Afficherdoct(strr,request,response);
+})
+
+app.post("/listsenseignant",(request,response)=>{
+    const strr = request.body.strr;
+    console.log(strr);
+    AfficherEnseignant(strr,request,response);
 })
 
 app.post("/enseignantsdr",(request,response)=>{
