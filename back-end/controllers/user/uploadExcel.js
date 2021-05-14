@@ -95,6 +95,7 @@ async function Import(res,req){
             }
         }
     }catch(err){
+        console.log(err)
         res.send({
             message:err,
             error:true

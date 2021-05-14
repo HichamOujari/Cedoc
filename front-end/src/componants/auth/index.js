@@ -46,6 +46,7 @@ const Login =()=> {
                                 setAuthToken(response.data.token);
                                 Cookies.set("token",response.data.token);
                                 Cookies.set("USERid",response.data.userID);
+                                Cookies.set("username",response.data.user);
                                 document.location.reload();
                                 break;
                         default : setError(true);

@@ -9,6 +9,7 @@ const GetEnsg = (res,req)=>{
     }
     connection.query('select enseignant.id,enseignant.nom, enseignant.prenom, enseignant.email, enseignant.tele, concat(typestructure.type," ",structure_recherche.acronyme) as structure, grade.name as grade from  enseignant, structure_recherche, typestructure, grade,user where enseignant.stucture_recherche=structure_recherche.id and user.idUser=enseignant.id and user.type!=0 and typestructure.id=structure_recherche.typeStructure and grade.id=enseignant.grade '+isSpecifiedAccount+' union SELECT enseignant.id, enseignant.nom, enseignant.prenom, enseignant.email, enseignant.tele, enseignant.stucture_recherche, grade.name as grade from enseignant,grade,user where user.idUser=enseignant.id and enseignant.grade=grade.id and enseignant.stucture_recherche is null and user.type!=0'+isSpecifiedAccount,(err,result)=>{
         if(err){
+            console.log(err)
             res.send({
                 error:true,
                 message:err

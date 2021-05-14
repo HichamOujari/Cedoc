@@ -33,7 +33,6 @@ async function DeleteStruct(res,req){
             
         }
     }catch(err){
-        console.log(err)
         res.send({
             message:err.message.sqlMessage,
             error:true

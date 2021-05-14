@@ -33,7 +33,7 @@ class Navbar extends Component {
                         </div>
                         {this.token?
                             <div className="AVATAR">
-                                M
+                                {Cookies.get("username").split('')[0]}
                                 <ul className="profil_deconnect_Doct">
                                     <li><Link to="/profil">Profil</Link></li>
                                     <li onClick={()=>{
