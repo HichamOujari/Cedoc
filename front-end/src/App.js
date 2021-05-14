@@ -21,6 +21,9 @@ import Hisfiles from "./componants/admin/doctorant/hisfiles"
 
 import ProtectedRouter from "./protectedRoute"
 import {AuthProvider} from "./authContext"
+import Cookies from "js-cookie"
+
+Cookies.set("hostpath","http://localhost:3001")
 
 export default class App extends Component {
   render() {
@@ -28,7 +31,6 @@ export default class App extends Component {
       <AuthProvider>
         <Router>
           <Switch>
-
             <Route path='/' exact>
               <Home/>
             </Route>
