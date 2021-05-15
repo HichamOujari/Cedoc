@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 15 mai 2021 à 01:13
+-- Généré le : sam. 15 mai 2021 à 02:24
 -- Version du serveur :  10.4.19-MariaDB
 -- Version de PHP : 8.0.6
 
@@ -309,7 +309,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `password`, `type`, `idUser`, `token`) VALUES
-(1, 'admin@emi.ac.ma', 'cb60d530016a74a94e36d3375d00b13b', 0, 0, '1621032929134'),
+(1, 'admin@emi.ac.ma', 'cb60d530016a74a94e36d3375d00b13b', 0, 0, '1621034827525'),
 (11, 'hichamoujari99@gmail.com', '3a6919fe4c297c2e4838cf3755702b39', 2, 14, '1621032157751'),
 (13, 'doc1@hotmail.com', '5bccab48325dfa0c3edb955b382fc08a', 3, 6, '1621033926473'),
 (14, 'doc2@hotmail.com', '438caedbccb721660f3e3a0f51bdf833', 3, 7, NULL),
