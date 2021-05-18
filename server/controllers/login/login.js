@@ -1,7 +1,7 @@
 let connection = require("../config/db");
 
 const Login = (u,p,req,res) =>{
-    connection.query("select * from users where user = ? and password = ?",
+    connection.query("select * from enseignant where username = ? and password = ? LIMIT 1",
     [u,p],
     (err,result)=>{
         if(err){
@@ -11,7 +11,7 @@ const Login = (u,p,req,res) =>{
             res.send(result);
         }
         else{
-            res.send({error : "Incorrect email or password !"});
+            res.send({error : "Incorrect username or password !"});
         }
     })
 }

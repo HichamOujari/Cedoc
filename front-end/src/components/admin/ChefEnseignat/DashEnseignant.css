@@ -1,0 +1,28 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+.DashEnseignant>.mainn{
+    width: Calc(100% - 250px);
+    margin-left: 250px;
+}
+
+.DashEnseignant>.mains{
+    margin-top: -50px;
+}
+
+.DashEnseignant>.container
+{
+    margin-left: 300px;
+    margin-top: -640px;
+}
+
+.DashEnseignant>.container h4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 45, 89);
+}
+
+.DashEnseignant>.container p
+{
+    font-size: 18px;
+}
