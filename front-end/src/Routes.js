@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { Component, useContext, useEffect, useState } from 'react';
 import Home from "./components/home/Home";
 import {BrowserRouter as Router , Redirect, Route , Switch} from "react-router-dom"
@@ -21,7 +22,7 @@ function Routes (){
 
         const Auth = useContext(AuthApi);
 
-        if(Auth.auth==true)
+        if(Auth.auth===true)
         {
             return(
                 <Switch>
@@ -34,7 +35,7 @@ function Routes (){
             )
         }
 
-        if(Auth.auc==true)
+        if(Auth.auc===true)
         {
             return(
                 <Switch>
@@ -46,7 +47,7 @@ function Routes (){
             )
         }
 
-        if(Auth.aue==true)
+        if(Auth.aue===true)
         {
             return(
                 <Switch>
