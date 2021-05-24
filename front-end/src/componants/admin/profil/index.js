@@ -5,12 +5,6 @@ import PathingPage from "../../shared/pathingPage"
 import ProfilShared from "../../shared/profilShared"
 
 class ProfilAdmin extends Component {
-    data = {
-        nom : "Ahmed",
-        prenom:"Oudrhiri",
-        grade : "Responsable Cedoc",
-        email:"admin@emi.ac.ma"
-    }
     render() {
         return (
             <div>
@@ -18,7 +12,7 @@ class ProfilAdmin extends Component {
                 <div className="MainProfilAdmin">
                     <PathingPage title="Profil Admin" paths={["Cedoc Emi","Admin","Profil"]}/>
                     <div className="Content">
-                        <ProfilShared data={this.data} />
+                        <ProfilShared />
                     </div>
                 </div>
             </div>

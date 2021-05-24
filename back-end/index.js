@@ -26,6 +26,8 @@ const getDoctFiles = require("./controllers/user/getDoctFiles");
 const getEnsgAccountInfos = require("./controllers/user/getEnsgAccountInfos");
 const selectPretDoct = require("./controllers/user/selectPretDoct");
 const getEnsgSameStruct = require("./controllers/user/getEnsgSameStruct");
+const getInfosAcount = require("./controllers/user/getInfosAcount");
+const UpdateAdmin = require("./controllers/user/UpdateAdmin");
 
 app.use(cors());
 app.use(express.json());
@@ -63,6 +65,9 @@ app.post("/auth/GetEnsg",(request,response)=>{
 app.post("/auth/getEnsgSameStruct",(request,response)=>{
     getEnsgSameStruct(response,request)
 })
+app.post('/auth/getInfosAccount',(request,response)=>{
+    getInfosAcount(response,request)
+})
 
 app.post("/auth/GetMembers",(request,response)=>{
     GetMembers(response,request)
@@ -82,6 +87,11 @@ app.post("/auth/getDoctFiles",(request,response)=>{
 app.post("/auth/UpdateEnsg",(request,response)=>{
     UpdateEnsg(response,request)
 })
+
+app.post("/auth/UpdateAdmin",(request,response)=>{
+    UpdateAdmin(response,request)
+})
+
 app.post("/auth/uploadFileInscription",(request,response)=>{
     uploadFileInscription(response,request)
 })
@@ -122,6 +132,8 @@ app.post("/auth/AddStructure",(request,response)=>{
 app.post("/auth/DeleteStruct",(request,response)=>{
     DeleteStruct(response,request)
 })
+
+
 
 
 app.listen(3001, ()=>{

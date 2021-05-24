@@ -16,7 +16,7 @@ async function UpdateEnsg (res,req){
         if(rslt.error===true){
             res.send({
                 error:true,
-                message:rslt.messgae.sqlMessage
+                message:rslt.message.sqlMessage
             })
         }else{
             rslt = await exec('update user set email=? where idUser=?',[email,id])
